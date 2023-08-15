@@ -1,0 +1,113 @@
+@media screen and (min-width: 1024px) {
+  section#FORM_principal {
+    .capa {
+      .container {
+        padding-top: 90px;
+        padding-bottom: 90px;
+
+        .info {
+          font-size: 56px;
+        }
+
+        .columnas {
+          flex-direction: row;
+          align-items: start;
+          .formulario {
+            padding: 78px 8% 88px;
+            .primera-parte {
+              // &::before{
+
+              // }
+              .titulo {
+                font-size: 46px;
+              }
+
+              .textos {
+                margin-bottom: 20px;
+              }
+
+              .pagos {
+                .pagos-input-btn {
+                  flex-direction: row;
+                  & > input {
+                    width: 234px;
+                  }
+
+                  .btns {
+                    gap: 17px;
+                  }
+                }
+                .aceptar-check-mes {
+                  display: flex;
+                  flex-wrap: nowrap;
+                  gap: 17px;
+
+                  .check {
+                    max-width: 300px;
+                  }
+
+                  .mensuales {
+                    max-width: 300px;
+                  }
+                }
+
+                & > .btn-enviar {
+                  max-width: 197px;
+                }
+              }
+            }
+
+            .segunda-parte {
+              .content-input {
+                .info-titulo {
+                  font-size: 27px;
+                }
+
+                .inputs {
+                  margin-top: 30px;
+
+                  & > label:nth-child(1) {
+                    width: 232px;
+                  }
+                  & > label:nth-child(2) {
+                    width: 232px;
+                  }
+                }
+              }
+            }
+
+            .tercera-parte {
+              .content-input {
+                .info-titulo {
+                  font-size: 27px;
+                }
+
+                & > .pais {
+                  max-width: 234px;
+                }
+
+                .inputs {
+                  margin-top: 30px;
+                }
+
+                .ciudadCodigo {
+                  gap: 12px;
+                  & > div {
+                    width: 155px;
+                  }
+                  .codigo {
+                    max-width: 157px;
+                  }
+                }
+              }
+            }
+
+            .btn-enviar {
+              max-width: 197px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
