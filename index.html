@@ -17,6 +17,7 @@
       href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <link rel="stylesheet" href="./asset/css/styles.css" />
@@ -60,9 +61,28 @@
                       <div class="aceptar-check-mes">
                         <!-- !Parte del check -->
                         <div class="check">Aqui va el check</div>
-                        <div class="mensuales">
+                        <label class="mensuales" for="mes">
                           Cada
 
+                          <select
+                            class="js-example-basic-single"
+                            name="state"
+                            id="mes"
+                          >
+                            <option value="Enero">Enero</option>
+                            <option value="Febrero">Febrero</option>
+                            <option value="Marzo">Marzo</option>
+                            <option value="Abril">Abril</option>
+                            <option value="Mayo">Mayo</option>
+                            <option value="Junio">Junio</option>
+                            <option value="Julio">Julio</option>
+                            <option value="Agosto">Agosto</option>
+                            <option value="Septiembre">Septiembre</option>
+                            <option value="Octubre">Octubre</option>
+                            <option value="Noviembre">Noviembre</option>
+                            <option value="Diciembre">Diciembre</option>
+                          </select>
+                          <!-- 
                           <div class="cp_wrapper">
                             <div class="select">
                               <input
@@ -95,8 +115,8 @@
                                 </svg>
                               </span>
                             </div>
-                          </div>
-                        </div>
+                          </div> -->
+                        </label>
                       </div>
                       <button type="button" class="btn-enviar">Donar</button>
                     </div>
@@ -168,17 +188,20 @@
                       >Datos para certificado de donación</span
                     >
 
-                    <!-- ! falta acomodar los select -->
-                    <div
-                      class="pais"
-                      style="
-                        border: 1px solid red;
-                        height: 38px;
-                        margin-top: 10px;
-                      "
-                    >
-                      falta select
-                    </div>
+                    <!-- ! Faltan, algunos detalles del select-->
+                    <label for="pais" class="pais">
+                      País
+                      <select
+                        class="js-example-basic-single"
+                        name="state"
+                        id="pais"
+                      >
+                        <option value="España">España</option>
+                        <option value="Italia">Italia</option>
+                        <option value="Francia">Francia</option>
+                        <option value="Chile">Chile</option>
+                      </select>
+                    </label>
                     <!-- ! -->
 
                     <div class="inputs">
@@ -214,19 +237,36 @@
                     </div>
 
                     <div class="ciudadCodigo">
-                      <!-- ! falta acomodar los select -->
-                      <div class="" style="border: 1px solid red; height: 38px">
-                        falta select
-                      </div>
+                      <label for="city" class="codigo">
+                        Ciudad
+                        <input
+                          id="city"
+                          type="text"
+                          class="inputInfo"
+                          placeholder="Ciudad"
+                        />
+                      </label>
 
-                      <div class="" style="border: 1px solid red; height: 38px">
-                        falta select
-                      </div>
+                      <!-- ! Faltan, algunos detalles del select-->
+                      <label for="provincia" class="codigo">
+                        Provincia
+                        <select
+                          class="js-example-basic-single"
+                          name="state"
+                          id="provincia"
+                        >
+                          <option value="Granada">Granada</option>
+                          <option value="Burgos">Burgos</option>
+                          <option value="Albacete">Albacete</option>
+                          <option value="Madrid">Madrid</option>
+                        </select>
+                      </label>
                       <!-- ! -->
 
                       <label for="CODIGO-POSTAL" class="codigo">
                         Código postal
                         <input
+                          id="CODIGO-POSTAL"
                           type="text"
                           class="inputInfo"
                           placeholder="Código postal"
@@ -345,10 +385,23 @@
       }
     </script>
 
-    <!-- <script>
+    <!-- jquery -->
+
+    <script>
       $(document).ready(function () {
-        $(".js-example-basic-single").select2();
+        $("#pais").select2({
+          minimumResultsForSearch: Infinity,
+          placeholder: "Select an option",
+        });
+        $("#mes").select2({
+          minimumResultsForSearch: Infinity,
+          placeholder: "Select an option",
+        });
+        $("#provincia").select2({
+          minimumResultsForSearch: Infinity,
+          placeholder: "Select an option",
+        });
       });
-    </script> -->
+    </script>
   </body>
 </html>

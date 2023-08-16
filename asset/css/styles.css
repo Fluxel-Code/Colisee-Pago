@@ -98,6 +98,9 @@ section#FORM_principal .capa .container .columnas .formulario .primera-parte .te
   font-size: 16px;
   line-height: 120%;
 }
+section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos {
+  max-width: 520px;
+}
 section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .pagos-input-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,6 +112,7 @@ section#FORM_principal .capa .container .columnas .formulario .primera-parte .pa
   gap: 17px;
 }
 section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .pagos-input-btn > input {
+  max-width: 492px;
   color: #404040;
   border: 1px solid #c5cfdb;
   border-radius: 6px;
@@ -175,7 +179,6 @@ section#FORM_principal .capa .container .columnas .formulario .primera-parte .pa
 }
 section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes {
   margin-top: 18px;
-  max-width: 520px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,137 +201,48 @@ section#FORM_principal .capa .container .columnas .formulario .primera-parte .pa
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   gap: 12px;
   width: 100%;
   font-size: 18px;
 }
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper {
-  width: 100%;
+section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes select option {
+  font-family: "roboto";
+  color: #404040;
+}
+section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .select2-container {
+  margin-top: 4px;
+  width: 100% !important;
   height: 38px;
+  display: block !important;
 }
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select input::-webkit-input-placeholder {
-  color: #c5cfdb;
+section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .select2-container .selection .select2-selection {
+  height: 38px;
+  border: 1px solid #c5cfdb !important;
+  border-radius: 6px !important;
 }
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select input:-ms-input-placeholder {
-  color: #c5cfdb;
-}
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select input::-moz-placeholder {
-  color: #c5cfdb;
-}
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select input::-ms-input-placeholder {
-  color: #c5cfdb;
-}
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select input::placeholder {
-  color: #c5cfdb;
-}
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select {
-  --width: 100%;
-  --height: 38px;
-  --icon-w: 40px;
-  position: relative;
-  width: var(--width);
-  height: var(--height);
-  padding-right: var(--icon-w);
-  cursor: pointer;
-  font-size: 16px;
-  font-family: "Roboto";
-}
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select > .select-icon {
-  width: auto;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: var(--gap-400, 16px);
+section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .select2-container .selection .select2-selection .select2-selection__rendered,
+section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .select2-container .selection .select2-selection .select2-selection__arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: var(--trans);
-  transition: var(--trans);
-  pointer-events: none;
-}
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select > .options {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  max-height: 500px;
-  padding-block: var(--gap-500, 10px);
-  padding-top: calc(var(--height) + 5px);
-  background-color: #ffffff;
-  border: 1px solid #c5cfdb;
-  overflow: hidden;
-  overflow-y: auto;
-  opacity: 0;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-  pointer-events: none;
-}
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select > input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-  padding: var(--gap-400, 16px);
-  padding-right: var(--icon-w);
-  color: #404040;
-  text-overflow: ellipsis;
-  cursor: pointer;
-  border: 1px solid;
-  border: 1px solid #c5cfdb;
-  border-radius: 6px;
-  font-size: 16px;
   font-family: "Roboto";
-}
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select.open input {
-  border-radius: 0;
-}
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select.open input:focus-visible {
-  outline: 0;
-}
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select.open .select-icon {
-  border-bottom: 0;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select.open .options {
-  opacity: 1;
-  pointer-events: all;
-}
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select .option {
-  padding-block: 5px;
-  padding-inline: var(--gap-400, 16px);
-  color: #404040;
-}
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select .option:hover,
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select .option:focus {
-  border: 1px solid #c5cfdb !important;
-  outline: none !important;
-  background-color: #c5cfdb58;
-}
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select .options {
-  z-index: 1;
-}
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select,
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select input,
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select .option,
-section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes .mensuales .cp_wrapper .select .select-icon {
-  z-index: 2;
+  color: #c5cfdb;
 }
 section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos > .btn-enviar {
   text-transform: uppercase;
   cursor: pointer;
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
+  max-width: 197px;
   background: #541749 0% 0% no-repeat padding-box;
   border: 1px solid #541749;
   border-radius: 6px;
@@ -457,6 +371,86 @@ section#FORM_principal .capa .container .columnas .formulario .tercera-parte .co
   margin-top: 0;
   margin-bottom: 20px;
 }
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input select option {
+  font-family: "roboto";
+  color: #404040;
+}
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .select2-container {
+  margin-top: 4px;
+  width: 100% !important;
+  height: 38px;
+  display: block !important;
+}
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .select2-container .selection .select2-selection {
+  height: 38px;
+  border: 1px solid #c5cfdb !important;
+  border-radius: 6px !important;
+}
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .select2-container .selection .select2-selection .select2-selection__rendered,
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .select2-container .selection .select2-selection .select2-selection__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  font-family: "Roboto";
+  color: #c5cfdb;
+}
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .pais {
+  width: 100%;
+  display: block;
+  color: #541749;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .pais .inputInfo {
+  margin-top: 4px;
+  width: 100%;
+  display: block;
+  color: #404040;
+  border: 1px solid #c5cfdb;
+  border-radius: 6px;
+  height: 38px;
+  font-family: "Roboto";
+  font-size: 16px;
+  padding: 8px 15px;
+}
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .pais .inputInfo::-webkit-input-placeholder {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #c5cfdb;
+}
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .pais .inputInfo::-moz-placeholder {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #c5cfdb;
+}
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .pais .inputInfo:-ms-input-placeholder {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #c5cfdb;
+}
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .pais .inputInfo::-ms-input-placeholder {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #c5cfdb;
+}
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .pais .inputInfo::placeholder {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #c5cfdb;
+}
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .pais .inputInfo:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #c5cfdb;
+  outline: none;
+}
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .pais .inputInfo:last-child {
+  height: auto;
+}
 section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .inputs {
   margin-top: 20px;
   display: -webkit-box;
@@ -531,8 +525,32 @@ section#FORM_principal .capa .container .columnas .formulario .tercera-parte .co
       flex-wrap: wrap;
   gap: 20px;
 }
-section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .ciudadCodigo > div {
-  width: 100%;
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .ciudadCodigo select option {
+  font-family: "roboto";
+  color: #404040;
+}
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .ciudadCodigo .select2-container {
+  margin-top: 4px;
+  width: 100% !important;
+  height: 38px;
+  display: block !important;
+}
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .ciudadCodigo .select2-container .selection .select2-selection {
+  height: 38px;
+  border: 1px solid #c5cfdb !important;
+  border-radius: 6px !important;
+}
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .ciudadCodigo .select2-container .selection .select2-selection .select2-selection__rendered,
+section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .ciudadCodigo .select2-container .selection .select2-selection .select2-selection__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  font-family: "Roboto";
+  color: #c5cfdb;
 }
 section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .ciudadCodigo .codigo {
   width: 100%;
@@ -543,12 +561,12 @@ section#FORM_principal .capa .container .columnas .formulario .tercera-parte .co
 }
 section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .ciudadCodigo .codigo .inputInfo {
   margin-top: 4px;
+  width: 100%;
   display: block;
   color: #404040;
   border: 1px solid #c5cfdb;
   border-radius: 6px;
   height: 38px;
-  width: 100%;
   font-family: "Roboto";
   font-size: 16px;
   padding: 8px 15px;
@@ -626,6 +644,9 @@ section#FORM_principal .capa .container .columnas .formulario .btn-enviar {
   cursor: pointer;
   margin-top: 60px;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 197px;
   background: #541749 0% 0% no-repeat padding-box;
   border: 1px solid #541749;
   border-radius: 6px;
@@ -674,6 +695,8 @@ section#FORM_principal .capa .container .columnas .sabias-que .textos p {
   color: #404040;
 }
 section#FORM_principal .capa .container .columnas .sabias-que .btn-ver-mas {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 50px;
   max-width: 197px;
   width: 100%;
@@ -710,7 +733,7 @@ section#FORM_principal .capa .container .columnas .sabias-que .btn-ver-mas {
             align-items: start;
   }
   section#FORM_principal .capa .container .columnas .formulario {
-    padding: 78px 8% 88px;
+    padding: 60px 45px;
   }
   section#FORM_principal .capa .container .columnas .formulario .primera-parte .titulo {
     font-size: 46px;
@@ -746,6 +769,7 @@ section#FORM_principal .capa .container .columnas .sabias-que .btn-ver-mas {
   }
   section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos > .btn-enviar {
     max-width: 197px;
+    margin-left: 0;
   }
   section#FORM_principal .capa .container .columnas .formulario .segunda-parte .content-input .info-titulo {
     font-size: 27px;
@@ -775,9 +799,13 @@ section#FORM_principal .capa .container .columnas .sabias-que .btn-ver-mas {
     width: 155px;
   }
   section#FORM_principal .capa .container .columnas .formulario .tercera-parte .content-input .ciudadCodigo .codigo {
-    max-width: 157px;
+    max-width: 156px;
   }
   section#FORM_principal .capa .container .columnas .formulario .btn-enviar {
     max-width: 197px;
+    margin-left: 0;
+  }
+  section#FORM_principal .capa .container .columnas .sabias-que .btn-ver-mas {
+    margin-left: 0;
   }
 }
