@@ -157,13 +157,13 @@ section#FORM_principal .capa .container .columnas .formulario .primera-parte .pa
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .pagos-input-btn .btns .btn {
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  width: 78px;
+  width: 90px;
   background: #54174927 0% 0% no-repeat padding-box;
   border: 1px solid #541749;
   border-radius: 6px;
@@ -759,6 +759,9 @@ section#FORM_principal .capa .container .columnas .sabias-que .btn-ver-mas {
   section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .pagos-input-btn .btns {
     gap: 17px;
   }
+  section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .pagos-input-btn .btns .btn {
+    width: 78px;
+  }
   section#FORM_principal .capa .container .columnas .formulario .primera-parte .pagos .aceptar-check-mes {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -813,5 +816,10 @@ section#FORM_principal .capa .container .columnas .sabias-que .btn-ver-mas {
   }
   section#FORM_principal .capa .container .columnas .sabias-que .btn-ver-mas {
     margin-left: 0;
+  }
+}
+@media screen and (min-width: 1300px) {
+  section#FORM_principal .capa .container .columnas .formulario {
+    padding: 78px 8% 88px;
   }
 }
